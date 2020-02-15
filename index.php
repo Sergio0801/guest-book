@@ -12,7 +12,7 @@ $caplimit = 4;
 for ($i = 0; $i < $caplimit; $i++) {
     $captcha[$i] = $letters[mt_rand(0, strlen($letters) - 1)];
 }
-
+/*create captcha*/
 $ss = $captcha;
 $co = implode('', $ss);
 $code = md5($co);
